@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UCAB">
+        <activity android:name=".LoginClient"></activity>
+        <activity android:name=".ConducteurMainActivity" />
+        <activity android:name=".LoginConducteur" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

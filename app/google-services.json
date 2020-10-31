@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "1061560045078",
+    "firebase_url": "https://ucab-a032f.firebaseio.com",
+    "project_id": "ucab-a032f",
+    "storage_bucket": "ucab-a032f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061560045078:android:0ed3d5a800cbb7d8096f37",
+        "android_client_info": {
+          "package_name": "com.ucab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061560045078-mps2q689f48eg0obkk66s1netgcsu0c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpJeK1s1EiW9yjEwd_EwWB8jQYlKyaX0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061560045078-mps2q689f48eg0obkk66s1netgcsu0c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061560045078:android:443a8724eca0d69a096f37",
+        "android_client_info": {
+          "package_name": "com.uqac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061560045078-aesglreo55lqph9i3r8iu21lhufek35e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uqac",
+            "certificate_hash": "fbb845da536d18b0c6355331a5969cd93b4bb392"
+          }
+        },
+        {
+          "client_id": "1061560045078-mps2q689f48eg0obkk66s1netgcsu0c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpJeK1s1EiW9yjEwd_EwWB8jQYlKyaX0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061560045078-mps2q689f48eg0obkk66s1netgcsu0c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

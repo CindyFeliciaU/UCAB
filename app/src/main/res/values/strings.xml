@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UCAB</string>
+    <string name="conducteur">conducteur</string>
+    <string name="client">client</string>
 </resources>
