@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">501059145777-o9igb1dmnrn1ecf5otrp64b34k1a0c7t.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ucab-17e71.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">501059145777</string>
+    <string name="google_api_key" translatable="false">AIzaSyBfqQPwxhBnb5DAfZtUkrXZ7npYzUwYOJ4</string>
+    <string name="google_app_id" translatable="false">1:501059145777:android:7bb48db5ccbd85b9464510</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBfqQPwxhBnb5DAfZtUkrXZ7npYzUwYOJ4</string>
+    <string name="google_storage_bucket" translatable="false">ucab-17e71.appspot.com</string>
+    <string name="project_id" translatable="false">ucab-17e71</string>
+</resources>

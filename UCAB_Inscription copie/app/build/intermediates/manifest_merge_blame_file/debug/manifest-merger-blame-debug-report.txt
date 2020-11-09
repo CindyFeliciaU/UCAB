@@ -1,0 +1,314 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ucab_inscription"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml
+10
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the "MyLocation" functionality.
+15    -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:10:5-79
+16-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:10:22-76
+17
+18    <!--
+19         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+20         Google Maps Android API v2, but you must specify either coarse or fine
+21         location permissions for the "MyLocation" functionality.
+22    -->
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:17:5-81
+23-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:17:22-78
+24    <uses-permission android:name="android.permission.INTERNET" />
+24-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:18:5-67
+24-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:18:22-64
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:24:5-79
+25-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:24:22-76
+26
+27    <uses-feature
+27-->[com.google.android.gms:play-services-maps:17.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/03bf35f9923df84b5c2877b75f0397d7/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+28        android:glEsVersion="0x00020000"
+28-->[com.google.android.gms:play-services-maps:17.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/03bf35f9923df84b5c2877b75f0397d7/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+29        android:required="true" />
+29-->[com.google.android.gms:play-services-maps:17.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/03bf35f9923df84b5c2877b75f0397d7/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+30
+31    <application
+31-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:20:5-63:19
+32        android:name="androidx.multidex.MultiDexApplication"
+33        android:allowBackup="true"
+33-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:21:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.3.1] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/33718701d713ca3e83325f7dda0e045d/core-1.3.1/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+36-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:22:9-43
+37        android:label="@string/app_name"
+37-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:23:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:24:9-54
+39        android:supportsRtl="true"
+39-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:25:9-35
+40        android:testOnly="true"
+41        android:theme="@style/AppTheme" >
+41-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:26:9-40
+42
+43        <!--
+44             The API key for Google Maps-based APIs is defined as a string resource.
+45             (See the file "res/values/google_maps_api.xml").
+46             Note that the API key is linked to the encryption key used to sign the APK.
+47             You need a different API key for each encryption key, including the release key that is used to
+48             sign the APK for publishing.
+49             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+50        -->
+51        <meta-data
+51-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:36:9-38:55
+52            android:name="com.google.android.geo.API_KEY"
+52-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:37:13-58
+53            android:value="@string/google_maps_key" />
+53-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:38:13-52
+54
+55        <activity
+55-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:40:9-42:75
+56            android:name="com.example.ucab_inscription.DriverMapActivity3"
+56-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:41:13-47
+57            android:label="@string/title_activity_driver_map3" />
+57-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:42:13-63
+58        <activity
+58-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:43:9-45:67
+59            android:name="com.example.ucab_inscription.DriverMapsActivity2"
+59-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:44:13-48
+60            android:label="@string/title_activity_driver_maps2" />
+60-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:45:13-64
+61        <activity
+61-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:46:9-48:65
+62            android:name="com.example.ucab_inscription.DriverMapActivity"
+62-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:47:13-46
+63            android:label="@string/title_activity_driver_map" />
+63-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:48:13-62
+64        <activity android:name="com.example.ucab_inscription.MapActivity" />
+64-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:49:9-49
+64-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:49:19-46
+65        <activity android:name="com.example.ucab_inscription.Login" >
+65-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:50:9-54:20
+65-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:50:19-40
+66            <intent-filter>
+66-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:51:13-53:29
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:52:17-77
+67-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:52:27-74
+68            </intent-filter>
+69        </activity>
+70        <activity android:name="com.example.ucab_inscription.Register" >
+70-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:55:9-61:20
+70-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:55:19-43
+71            <intent-filter>
+71-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:56:13-60:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:57:17-69
+72-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:57:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:52:17-77
+74-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:52:27-74
+75            </intent-filter>
+76        </activity>
+77        <activity android:name="com.example.ucab_inscription.MainActivity" />
+77-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:62:9-50
+77-->/Users/Cindyrella/Downloads/UCAB_Inscription copie/app/src/main/AndroidManifest.xml:62:19-47
+78        <activity
+78-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:27:9-34:50
+79            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+79-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:28:13-85
+80            android:excludeFromRecents="true"
+80-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:29:13-46
+81            android:exported="true"
+81-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:30:13-36
+82            android:launchMode="singleTask"
+82-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:31:13-44
+83            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+83-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:32:13-102
+84            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+84-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:33:13-72
+85        <activity
+85-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:35:9-52:20
+86            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+86-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:36:13-80
+87            android:excludeFromRecents="true"
+87-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:37:13-46
+88            android:exported="true"
+88-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:38:13-36
+89            android:launchMode="singleTask"
+89-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:39:13-44
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+90-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:40:13-72
+91            <intent-filter>
+91-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:41:13-51:29
+92                <action android:name="android.intent.action.VIEW" />
+92-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:42:17-69
+92-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:42:25-66
+93
+94                <category android:name="android.intent.category.DEFAULT" />
+94-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:44:17-76
+94-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:44:27-73
+95                <category android:name="android.intent.category.BROWSABLE" />
+95-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:45:17-78
+95-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:45:27-75
+96
+97                <data
+97-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:47:17-50:51
+98                    android:host="firebase.auth"
+98-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:48:21-49
+99                    android:path="/"
+99-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:49:21-37
+100                    android:scheme="genericidp" />
+100-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:50:21-48
+101            </intent-filter>
+102        </activity>
+103        <activity
+103-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:53:9-70:20
+104            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+104-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:54:13-79
+105            android:excludeFromRecents="true"
+105-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:55:13-46
+106            android:exported="true"
+106-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:56:13-36
+107            android:launchMode="singleTask"
+107-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:57:13-44
+108            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+108-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:58:13-72
+109            <intent-filter>
+109-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:59:13-69:29
+110                <action android:name="android.intent.action.VIEW" />
+110-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:42:17-69
+110-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:42:25-66
+111
+112                <category android:name="android.intent.category.DEFAULT" />
+112-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:44:17-76
+112-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:44:27-73
+113                <category android:name="android.intent.category.BROWSABLE" />
+113-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:45:17-78
+113-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:45:27-75
+114
+115                <data
+115-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:47:17-50:51
+116                    android:host="firebase.auth"
+116-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:48:21-49
+117                    android:path="/"
+117-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:49:21-37
+118                    android:scheme="recaptcha" />
+118-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:50:21-48
+119            </intent-filter>
+120        </activity>
+121
+122        <service
+122-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:72:9-81:19
+123            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+123-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:73:13-101
+124            android:enabled="true"
+124-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:74:13-35
+125            android:exported="false" >
+125-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:75:13-37
+126            <intent-filter>
+126-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:76:13-80:29
+127                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+127-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:77:17-89
+127-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:77:25-86
+128
+129                <category android:name="android.intent.category.DEFAULT" />
+129-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:44:17-76
+129-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:44:27-73
+130            </intent-filter>
+131        </service>
+132        <service
+132-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:82:9-88:19
+133            android:name="com.google.firebase.components.ComponentDiscoveryService"
+133-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:83:13-84
+134            android:directBootAware="true"
+134-->[com.google.firebase:firebase-common:19.3.1] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/b0490454e848f18b90eb9fd352d0729e/jetified-firebase-common-19.3.1/AndroidManifest.xml:35:13-43
+135            android:exported="false" >
+135-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:84:13-37
+136            <meta-data
+136-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:85:13-87:85
+137                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+137-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:86:17-109
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-auth:20.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f09d091f81b212e5d890a8fd7ee1b65f/jetified-firebase-auth-20.0.0/AndroidManifest.xml:87:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-firestore:22.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/181a25fb8339fec78a7754b58f1acc2e/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:20:13-22:85
+140                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+140-->[com.google.firebase:firebase-firestore:22.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/181a25fb8339fec78a7754b58f1acc2e/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:21:17-111
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-firestore:22.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/181a25fb8339fec78a7754b58f1acc2e/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:22:17-82
+142        </service> <!-- Needs to be explicitly declared on P+ -->
+143        <uses-library
+143-->[com.google.android.gms:play-services-maps:17.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/03bf35f9923df84b5c2877b75f0397d7/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+144            android:name="org.apache.http.legacy"
+144-->[com.google.android.gms:play-services-maps:17.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/03bf35f9923df84b5c2877b75f0397d7/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+145            android:required="false" />
+145-->[com.google.android.gms:play-services-maps:17.0.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/03bf35f9923df84b5c2877b75f0397d7/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+146
+147        <activity
+147-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:23:9-27:75
+148            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+148-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:24:13-93
+149            android:excludeFromRecents="true"
+149-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:25:13-46
+150            android:exported="false"
+150-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:26:13-37
+151            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+151-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:27:13-72
+152        <!--
+153            Service handling Google Sign-In user revocation. For apps that do not integrate with
+154            Google Sign-In, this service will never be started.
+155        -->
+156        <service
+156-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:33:9-37:51
+157            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+157-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:34:13-89
+158            android:exported="true"
+158-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:35:13-36
+159            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+159-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:36:13-107
+160            android:visibleToInstantApps="true" />
+160-->[com.google.android.gms:play-services-auth:18.1.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/77452bf06d9675111d3b93a42653c37c/jetified-play-services-auth-18.1.0/AndroidManifest.xml:37:13-48
+161
+162        <activity
+162-->[com.google.android.gms:play-services-base:17.3.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/ba541f09ecba7e7a687839a1ca94cf76/jetified-play-services-base-17.3.0/AndroidManifest.xml:23:9-26:75
+163            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+163-->[com.google.android.gms:play-services-base:17.3.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/ba541f09ecba7e7a687839a1ca94cf76/jetified-play-services-base-17.3.0/AndroidManifest.xml:24:13-79
+164            android:exported="false"
+164-->[com.google.android.gms:play-services-base:17.3.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/ba541f09ecba7e7a687839a1ca94cf76/jetified-play-services-base-17.3.0/AndroidManifest.xml:25:13-37
+165            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+165-->[com.google.android.gms:play-services-base:17.3.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/ba541f09ecba7e7a687839a1ca94cf76/jetified-play-services-base-17.3.0/AndroidManifest.xml:26:13-72
+166
+167        <provider
+167-->[com.google.firebase:firebase-common:19.3.1] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/b0490454e848f18b90eb9fd352d0729e/jetified-firebase-common-19.3.1/AndroidManifest.xml:26:9-31:39
+168            android:name="com.google.firebase.provider.FirebaseInitProvider"
+168-->[com.google.firebase:firebase-common:19.3.1] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/b0490454e848f18b90eb9fd352d0729e/jetified-firebase-common-19.3.1/AndroidManifest.xml:27:13-77
+169            android:authorities="com.example.ucab_inscription.firebaseinitprovider"
+169-->[com.google.firebase:firebase-common:19.3.1] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/b0490454e848f18b90eb9fd352d0729e/jetified-firebase-common-19.3.1/AndroidManifest.xml:28:13-72
+170            android:directBootAware="true"
+170-->[com.google.firebase:firebase-common:19.3.1] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/b0490454e848f18b90eb9fd352d0729e/jetified-firebase-common-19.3.1/AndroidManifest.xml:29:13-43
+171            android:exported="false"
+171-->[com.google.firebase:firebase-common:19.3.1] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/b0490454e848f18b90eb9fd352d0729e/jetified-firebase-common-19.3.1/AndroidManifest.xml:30:13-37
+172            android:initOrder="100" />
+172-->[com.google.firebase:firebase-common:19.3.1] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/b0490454e848f18b90eb9fd352d0729e/jetified-firebase-common-19.3.1/AndroidManifest.xml:31:13-36
+173
+174        <meta-data
+174-->[com.google.android.gms:play-services-basement:17.3.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f8e1c9231e4c2edbae11e61f1b801af1/jetified-play-services-basement-17.3.0/AndroidManifest.xml:23:9-25:69
+175            android:name="com.google.android.gms.version"
+175-->[com.google.android.gms:play-services-basement:17.3.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f8e1c9231e4c2edbae11e61f1b801af1/jetified-play-services-basement-17.3.0/AndroidManifest.xml:24:13-58
+176            android:value="@integer/google_play_services_version" />
+176-->[com.google.android.gms:play-services-basement:17.3.0] /Users/Cindyrella/.gradle/caches/transforms-2/files-2.1/f8e1c9231e4c2edbae11e61f1b801af1/jetified-play-services-basement-17.3.0/AndroidManifest.xml:25:13-66
+177    </application>
+178
+179</manifest>
