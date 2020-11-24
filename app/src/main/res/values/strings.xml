@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UCAB_Inscription</string>
+    <string name="title_activity_driver_map">Map</string>
+    <string name="title_activity_driver_maps2">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_driver_map3">Map</string>
+</resources>
