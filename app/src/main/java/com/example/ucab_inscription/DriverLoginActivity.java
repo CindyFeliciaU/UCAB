@@ -55,12 +55,14 @@ public class DriverLoginActivity extends AppCompatActivity {
                 //Check for the user status
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if (user != null) {
-                    if(registration){
+                    /*if(registration){
                         intent = new Intent(DriverLoginActivity.this, Register.class);
                     }
                     else {
-                         intent = new Intent(DriverLoginActivity.this, DriverMapActivity3.class);
-                    }
+                    */
+
+                         intent = new Intent(DriverLoginActivity.this, Home.class);
+                    //}
                     startActivity(intent);
                     finish();
                     return;

@@ -22,7 +22,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfilActivity"></activity>
+        <activity android:name=".Home"></activity>
+        <activity android:name=".ProfilActivity" />
         <activity android:name=".RegisterCustomer" />
         <activity android:name=".CustomerLoginActivity" />
         <activity android:name=".DriverLoginActivity" />

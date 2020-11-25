@@ -26,9 +26,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your name"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="176dp"
-            tools:layout_editor_absoluteY="74dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502"
+            />
 
         <ImageView
             android:id="@+id/imageView"
@@ -36,19 +39,24 @@
             android:layout_height="73dp"
             android:saveEnabled="false"
             android:visibility="visible"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="161dp"
-            tools:layout_editor_absoluteY="136dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/profil"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="395dp"
         android:layout_height="132dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="293dp"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
 
         <TextView
             android:id="@+id/nameTextView2"
@@ -56,8 +64,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Your Status"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="164dp" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -77,40 +89,60 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="8dp"
+                android:layout_width="20dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.08"
+                android:layout_weight="0.1"
+                android:rotationX="4"
                 app:srcCompat="@android:drawable/ic_menu_call" />
 
             <TextView
                 android:id="@+id/phoneTextView"
-                android:layout_width="wrap_content"
+                android:layout_width="339dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Your phone" />
+                android:text="Your phone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="35dp" />
+            android:text="UQAC student"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.309"
+            tools:ignore="MissingConstraints" />
 
         <LinearLayout
-            android:layout_width="390dp"
-            android:layout_height="77dp"
+            android:layout_width="386dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="8dp"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="75dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.981">
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_baseline_email_24"
                 tools:ignore="VectorDrawableCompat" />
 
@@ -119,7 +151,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Your email" />
+                android:text="Your email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
