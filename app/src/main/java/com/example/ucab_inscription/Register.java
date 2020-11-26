@@ -22,6 +22,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firestore.v1.WriteResult;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -91,6 +92,7 @@ public class Register extends AppCompatActivity {
                             user.put("fName ",fullName);
                             user.put("email ",email);
                             user.put("phone", phone);
+
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {

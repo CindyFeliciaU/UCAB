@@ -15,6 +15,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +23,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditProfil"></activity>
+        <activity android:name=".TestListOffer"></activity>
+        <activity android:name=".AnOffer" />
+        <activity android:name=".HomeOffers" />
+        <activity android:name=".TripDemand" />
+        <activity android:name=".TripOffer" />
+        <activity android:name=".EditProfil" />
         <activity android:name=".Home" />
         <activity android:name=".ProfilActivity" />
         <activity android:name=".RegisterCustomer" />
@@ -58,6 +64,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".OfferListAdapter" />
     </application>
 
 </manifest>

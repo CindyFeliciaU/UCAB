@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="@drawable/carpooling">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:hint="Departure"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:hint="Destination"
+                    android:inputType="textPersonName"
+                    android:scrollbarAlwaysDrawHorizontalTrack="false"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border"
+                    android:ems="10"
+                    android:hint="Date"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:hint="Time"
+                    android:inputType="time"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:background="@drawable/border"/>
+
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+
+                    android:hint="Price per person"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/seat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:hint="Available seats"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:hint="Additional thoughts ?.."
+                    android:inputType="textPersonName" />
+
+                <LinearLayout
+                    android:layout_width="409dp"
+                    android:layout_height="77dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cancel_button"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cancel" />
+
+                    <Button
+                        android:id="@+id/confirm_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Confirm" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

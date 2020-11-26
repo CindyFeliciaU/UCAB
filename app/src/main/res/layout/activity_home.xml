@@ -15,4 +15,32 @@
         tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="478dp" />
 
+    <Button
+        android:id="@+id/tripoffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="offer"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/offerlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
