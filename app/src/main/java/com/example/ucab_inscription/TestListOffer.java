@@ -9,6 +9,6 @@ public class TestListOffer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_list_offer);
+      ///  setContentView(R.layout.activity_test_list_offer);
     }
 }

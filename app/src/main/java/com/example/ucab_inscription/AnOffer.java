@@ -20,7 +20,15 @@ public class AnOffer  {
     public void setDestination(String destination) {
         this.destination = destination;
     }
-
+    public String getDestination() {
+        return destination;
+    }
+    public String getDeparture() {
+        return departure;
+    }
+    public String getTripId() {
+        return tripId;
+    }
     public void setTripId(String tripId) {
         this.tripId = tripId;
     }

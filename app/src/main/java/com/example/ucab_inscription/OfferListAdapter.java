@@ -1,12 +1,15 @@
 package com.example.ucab_inscription;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,11 +35,13 @@ public class OfferListAdapter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_offers);
 
+        final ListView listView = (ListView) findViewById(R.id.listView);
+
         firebaseFirestore=FirebaseFirestore.getInstance();
         mFirestorelist = findViewById(R.id.firestore_list);
 
         //Query
-        Query query = FirebaseFirestore.getInstance().collection("users");
+        Query query = FirebaseFirestore.getInstance().collection("offer_trip");
         //RecyclerOptions
         FirestoreRecyclerOptions<OfferModel> response = new FirestoreRecyclerOptions.Builder<OfferModel>()
                 .setQuery(query, OfferModel.class).setLifecycleOwner(this)
@@ -58,16 +63,26 @@ public class OfferListAdapter extends AppCompatActivity {
                 offerHolder.list_price.setText(offerModel.getDestination());
 
             }
-            //ViewHholder
-            @Override
-            public void onError(FirebaseFirestoreException e) {
-                Log.e("error", e.getMessage());
-            }
+            //ViewHolder
+
         };
 
          mFirestorelist.setHasFixedSize(true);
         mFirestorelist.setLayoutManager(new LinearLayoutManager(this));
         mFirestorelist.setAdapter(adapter);
+
+        //listView.setAdapter(new CustomListAdapter(this, o));
+
+        // When the user clicks on the ListItem
+       /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+                Object o = listView.getItemAtPosition(position);
+                AnOffer country = (AnOffer) o;
+                Toast.makeText(OfferListAdapter.this, "Selected :" + " " + country, Toast.LENGTH_LONG).show();
+            }*/
+    //    });
     }
 
 

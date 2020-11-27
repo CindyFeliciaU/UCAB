@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -26,7 +29,6 @@ public class HomeOffers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_offers);
         simpleList = (ListView) findViewById(R.id.simpleListView);
-       //  listView = (ListView)findViewById(R.id.listView);
 
 // Fetch collaborators list from Firestore
         db.collection("offer_trip")
@@ -42,10 +44,23 @@ public class HomeOffers extends AppCompatActivity {
                                 ArrayList<AnOffer> o= new ArrayList<>();
                                 o.add(offer);
                                 AnOffer[] offertable= new AnOffer[]{offer};
-                               // ArrayAdapter<AnOffer> arrayAdapterr = new ArrayAdapter<AnOffer>();
-
-                                ArrayAdapter<AnOffer> arrayAdapter = new ArrayAdapter<AnOffer>(HomeOffers.this, android.R.layout.simple_list_item_1, offertable);
+                                 ArrayAdapter<AnOffer> arrayAdapter = new ArrayAdapter<AnOffer>(HomeOffers.this, android.R.layout.simple_list_item_1, offertable);
                                 listView.setAdapter(arrayAdapter);
+
+
+
+                                final ListView listView = (ListView) findViewById(R.id.simpleListView);
+
+                                // When the user clicks on the ListItem
+                                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                                    @Override
+                                    public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+                                        Object o = listView.getItemAtPosition(position);
+                                        AnOffer country = (AnOffer) o;
+                                        Toast.makeText(HomeOffers.this, "Selected :" + " " + country, Toast.LENGTH_LONG).show();
+                                    }
+                                });
                             }
                         } else {
                             Log.d(TAG, "Error getting documents: ", task.getException());
@@ -53,23 +68,6 @@ public class HomeOffers extends AppCompatActivity {
                     }
                 });
 
-       /* ListView listView = (ListView)findViewById(R.id.list_offer);
 
-
-
-        AnOffer tom = new Offer("Tom","admin");
-        UserAccount jerry = new UserAccount("Jerry","user");
-        UserAccount donald = new UserAccount("Donald","guest", false);
-
-        UserAccount[] users = new UserAccount[]{tom,jerry, donald};
-
-
-        // android.R.layout.simple_list_item_1 is a constant predefined layout of Android.
-        // used to create a ListView with simple ListItem (Only one TextView).
-
-        ArrayAdapter<UserAccount> arrayAdapter
-                = new ArrayAdapter<UserAccount>(this, android.R.layout.simple_list_item_1 , users);
-
-        listView.setAdapter(arrayAdapter);*/
     }
 }
