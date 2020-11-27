@@ -44,7 +44,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCA4e7ND-CJ5_QT0viBj6gQ8HuBvwyxGIw" />
+            android:value="" />
 
         <activity
             android:name=".DriverMapActivity3"

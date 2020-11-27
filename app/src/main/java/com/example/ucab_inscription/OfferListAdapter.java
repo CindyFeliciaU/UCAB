@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,14 +26,26 @@ import com.google.firebase.firestore.Query;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 // FirebaseRecyclerAdapter is a class provided by
 // FirebaseUI. it provides functions to bind, adapt and show
 // database contents in a Recycler View
 public class OfferListAdapter extends AppCompatActivity {
- private RecyclerView mFirestorelist;
+    private RecyclerView mFirestorelist;
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
+
+    List<String> offersList;
+    List<String> offersListAll;
+
+    public OfferListAdapter(List<String> offersList){
+        this.offersList=offersList;
+        this.offersListAll=new ArrayList<>(offersList);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +89,9 @@ public class OfferListAdapter extends AppCompatActivity {
         mFirestorelist.setLayoutManager(new LinearLayoutManager(this));
         mFirestorelist.setAdapter(adapter);
     }
+
+
+
 
 
     private class OfferHolder extends RecyclerView.ViewHolder {
