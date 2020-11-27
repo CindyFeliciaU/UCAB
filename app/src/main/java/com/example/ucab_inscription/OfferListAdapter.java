@@ -22,6 +22,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.Query;
 
+import org.w3c.dom.Text;
+
 
 // FirebaseRecyclerAdapter is a class provided by
 // FirebaseUI. it provides functions to bind, adapt and show
@@ -46,7 +48,6 @@ public class OfferListAdapter extends AppCompatActivity {
         FirestoreRecyclerOptions<OfferModel> response = new FirestoreRecyclerOptions.Builder<OfferModel>()
                 .setQuery(query, OfferModel.class).setLifecycleOwner(this)
                 .build();
-
          adapter = new FirestoreRecyclerAdapter<OfferModel, OfferHolder>(response) {
 
             @NonNull
@@ -59,42 +60,37 @@ public class OfferListAdapter extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(OfferHolder offerHolder, int i, @NonNull OfferModel offerModel) {
 
-                offerHolder.list_name.setText(offerModel.getDeparture());
-                offerHolder.list_price.setText(offerModel.getDestination());
+                offerHolder.list_hour.setText(offerModel.getHour());
+                offerHolder.list_destination.setText(offerModel.getDestination());
+                offerHolder.list_departure.setText(offerModel.getDeparture());
+                offerHolder.list_seats.setText(offerModel.getSeats());
+                offerHolder.list_date.setText(offerModel.getDate());
+                offerHolder.list_price.setText(offerModel.getPrice());
 
             }
-            //ViewHolder
-
         };
 
-         mFirestorelist.setHasFixedSize(true);
+        mFirestorelist.setHasFixedSize(true);
         mFirestorelist.setLayoutManager(new LinearLayoutManager(this));
         mFirestorelist.setAdapter(adapter);
-
-        //listView.setAdapter(new CustomListAdapter(this, o));
-
-        // When the user clicks on the ListItem
-       /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-                Object o = listView.getItemAtPosition(position);
-                AnOffer country = (AnOffer) o;
-                Toast.makeText(OfferListAdapter.this, "Selected :" + " " + country, Toast.LENGTH_LONG).show();
-            }*/
-    //    });
     }
 
 
     private class OfferHolder extends RecyclerView.ViewHolder {
-
-        private TextView list_name;
-        private TextView list_price;
+        private  TextView list_seats;
+        private  TextView list_hour;
+        private  TextView list_date;
+        private  TextView list_price;
+        private  TextView list_destination;
+        private  TextView list_departure;
 
         public OfferHolder(@NonNull View itemView) {
             super(itemView);
-
-            list_name= itemView.findViewById(R.id.list_name);
+        list_hour= itemView.findViewById(R.id.list_hour);
+         list_departure=itemView.findViewById(R.id.list_departure);
+          list_destination=itemView.findViewById(R.id.list_destination);
+           list_seats=itemView.findViewById(R.id.list_seats);
+            list_date= itemView.findViewById(R.id.list_date);
             list_price=itemView.findViewById(R.id.list_price);
         }
     }

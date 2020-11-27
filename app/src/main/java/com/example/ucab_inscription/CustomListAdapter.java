@@ -43,7 +43,7 @@ public class CustomListAdapter  extends BaseAdapter {
             convertView = layoutInflater.inflate(R.layout.list_item_single, null);
             holder = new ViewHolder();
             holder.flagView = (ImageView) convertView.findViewById(R.id.imageView_flag);
-            holder.countryNameView = (TextView) convertView.findViewById(R.id.list_name);
+            holder.countryNameView = (TextView) convertView.findViewById(R.id.list_date);
             holder.populationView = (TextView) convertView.findViewById(R.id.list_price);
             convertView.setTag(holder);
         } else {

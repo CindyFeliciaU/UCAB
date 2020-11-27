@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeOffers">
+    tools:context=".OfferListAdapter">
 
     <ListView
         android:id="@+id/listView"
@@ -21,6 +21,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:listSelector="@drawable/list_selector"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

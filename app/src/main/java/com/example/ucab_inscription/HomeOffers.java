@@ -39,15 +39,13 @@ public class HomeOffers extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Log.d(TAG, document.getId() + " => " + document.getData());
-                                AnOffer offer = new AnOffer(document.get("destination").toString(),document.get("departure").toString(), document.getId());
+                                AnOffer offer = new AnOffer(document.getId(),document.get("destination").toString(),document.get("departure").toString());
 
                                 ArrayList<AnOffer> o= new ArrayList<>();
-                                o.add(offer);
-                                AnOffer[] offertable= new AnOffer[]{offer};
+                               o.add(offer);
+                               AnOffer[] offertable= new AnOffer[]{offer};
                                  ArrayAdapter<AnOffer> arrayAdapter = new ArrayAdapter<AnOffer>(HomeOffers.this, android.R.layout.simple_list_item_1, offertable);
                                 listView.setAdapter(arrayAdapter);
-
-
 
                                 final ListView listView = (ListView) findViewById(R.id.simpleListView);
 

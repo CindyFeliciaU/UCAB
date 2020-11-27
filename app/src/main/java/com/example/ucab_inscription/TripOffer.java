@@ -85,11 +85,6 @@ public class TripOffer extends AppCompatActivity {
         tripDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //  Calendar calendar = Calendar.getInstance();
-            //    mYear = calendar.get(Calendar.YEAR);
-            //    mMonth = calendar.get(Calendar.MONTH);
-             //   mDay = calendar.get(Calendar.DAY_OF_MONTH);
-               // DatePickerDialog datePickerDialog = new DatePickerDialog(MainActivity.this, MainActivity.this,year, month,day);
 
                 show_Datepicker();
             }
@@ -115,11 +110,29 @@ public class TripOffer extends AppCompatActivity {
                 final String comment = commentTrip.getText().toString().trim();
 
                 if (TextUtils.isEmpty(depart)) {
-                    departure.setError("Departure is required");
+                    departure.setError("The departure is required");
                     return;
                 }
                 if (TextUtils.isEmpty(desti)) {
-                    destination.setError("Destination is required");
+                    destination.setError("The destination is required");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(date)) {
+                    tripDate.setError("The date is required");
+                    return;
+                }
+                if (TextUtils.isEmpty(time)) {
+                    tripTime.setError("The time is required");
+                    return;
+                }
+                if (TextUtils.isEmpty(price)) {
+                    priceTrip.setError("The price is required");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(seats)) {
+                    tripSeat.setError("The number of seats available is required");
                     return;
                 }
 
