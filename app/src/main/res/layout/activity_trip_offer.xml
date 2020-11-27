@@ -10,9 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:background="@drawable/carpooling">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@drawable/carpooling"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -123,6 +121,12 @@
                         android:layout_weight="1"
                         android:text="Confirm" />
                 </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_search_24" />
 
             </LinearLayout>
         </LinearLayout>

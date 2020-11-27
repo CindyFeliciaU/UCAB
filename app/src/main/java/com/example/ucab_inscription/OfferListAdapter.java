@@ -43,7 +43,7 @@ public class OfferListAdapter extends AppCompatActivity {
         mFirestorelist = findViewById(R.id.firestore_list);
 
         //Query
-        Query query = FirebaseFirestore.getInstance().collection("offer_trip");
+        Query query = FirebaseFirestore.getInstance().collection("offer_trip").orderBy("date");
         //RecyclerOptions
         FirestoreRecyclerOptions<OfferModel> response = new FirestoreRecyclerOptions.Builder<OfferModel>()
                 .setQuery(query, OfferModel.class).setLifecycleOwner(this)
@@ -60,8 +60,9 @@ public class OfferListAdapter extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(OfferHolder offerHolder, int i, @NonNull OfferModel offerModel) {
 
-                offerHolder.list_hour.setText(offerModel.getHour());
+
                 offerHolder.list_destination.setText(offerModel.getDestination());
+                offerHolder.list_hour.setText(offerModel.getTime());
                 offerHolder.list_departure.setText(offerModel.getDeparture());
                 offerHolder.list_seats.setText(offerModel.getSeats());
                 offerHolder.list_date.setText(offerModel.getDate());
@@ -86,10 +87,10 @@ public class OfferListAdapter extends AppCompatActivity {
 
         public OfferHolder(@NonNull View itemView) {
             super(itemView);
-        list_hour= itemView.findViewById(R.id.list_hour);
-         list_departure=itemView.findViewById(R.id.list_departure);
-          list_destination=itemView.findViewById(R.id.list_destination);
-           list_seats=itemView.findViewById(R.id.list_seats);
+            list_departure=itemView.findViewById(R.id.list_departure);
+            list_destination=itemView.findViewById(R.id.list_destination);
+            list_hour= itemView.findViewById(R.id.list_hour);
+            list_seats=itemView.findViewById(R.id.list_seats);
             list_date= itemView.findViewById(R.id.list_date);
             list_price=itemView.findViewById(R.id.list_price);
         }

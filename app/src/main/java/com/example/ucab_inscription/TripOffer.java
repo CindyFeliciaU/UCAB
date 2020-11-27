@@ -1,6 +1,7 @@
 package com.example.ucab_inscription;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
@@ -16,9 +17,16 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.libraries.places.api.Places;
+import com.google.android.libraries.places.api.model.Place;
+import com.google.android.libraries.places.widget.Autocomplete;
+import com.google.android.libraries.places.widget.AutocompleteActivity;
+import com.google.android.libraries.places.widget.model.AutocompleteActivityMode;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -30,6 +38,7 @@ import com.google.firestore.v1.WriteResult;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class TripOffer extends AppCompatActivity {
@@ -57,6 +66,8 @@ public class TripOffer extends AppCompatActivity {
     private Calendar c;
     private Context ctx = this;
 
+    //search
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +86,7 @@ public class TripOffer extends AppCompatActivity {
         tripSeat =findViewById(R.id.seat);
         commentTrip = findViewById(R.id.comments);
         priceTrip = findViewById(R.id.price);
+
 
         mYear= Calendar.getInstance().get(Calendar.YEAR);
         mMonth=Calendar.getInstance().get(Calendar.MONTH)+1;
@@ -151,7 +163,7 @@ public class TripOffer extends AppCompatActivity {
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
                                 Log.d(TAG, "Trip offer added with ID: " + documentReference.getId());
-                                startActivity(new Intent(getApplicationContext(), HomeOffers.class));
+                                startActivity(new Intent(getApplicationContext(), OfferListAdapter.class));
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {
@@ -210,30 +222,7 @@ public class TripOffer extends AppCompatActivity {
 
     }
 
-  /*  /**
-     * Add a document to a collection using a map.
-     *
-     * @return document data
-     */
-    /*
-    Map<String, Object> addSimpleDocumentAsMap() throws Exception {
-        // [START fs_add_doc_as_map]
-        // [START firestore_data_set_from_map]
-        // Create a Map to store the data we want to set
-        Map<String, Object> docData = new HashMap<>();
-        docData.put("name", "Los Angeles");
-        docData.put("state", "CA");
-        docData.put("country", "USA");
-        docData.put("regions", Arrays.asList("west_coast", "socal"));
-        // Add a new document (asynchronously) in collection "cities" with id "LA"
-        ApiFuture<WriteResult> future = db.collection("cities").document("LA").set(docData);
-        // ...
-        // future.get() blocks on response
-        System.out.println("Update time : " + future.get().getUpdateTime());
-        // [END firestore_data_set_from_map]
-        // [END fs_add_doc_as_map]
-        return docData;
-    }*/
+
 
 }
 

@@ -5,29 +5,23 @@ public class OfferModel {
     public String departure;
     public String tripId;
     public String date;
-    public String hour;
     public String seats;
     public String price;
-
-    OfferModel(String tripId, String destination, String departure, String date, String hour, String seats, String price) {
+    public String time;
+    OfferModel(String tripId, String destination, String departure, String date, String time, String seats, String price) {
         this.destination = destination;
         this.departure = departure;
         this.tripId = tripId;
         this.date=date;
-        this.hour=hour;
+        this.time=time;
         this.seats=seats;
         this.price=price;
-
-    }
-    OfferModel( String destination, String departure) {
-        this.destination = destination;
-        this.departure = departure;
-
 
     }
     OfferModel( ) {
 
     }
+
     public String getDate() {
         return date;
     }
@@ -35,13 +29,8 @@ public class OfferModel {
     public void setDate(String date) {
         this.date = date;
     }
-
-    public String getHour() {
-        return hour;
-    }
-
-    public void setHour(String hour) {
-        this.hour = hour;
+    public String getTime() {
+        return time;
     }
 
     public String getSeats() {
