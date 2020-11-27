@@ -43,7 +43,6 @@ public class OfferListAdapter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_offers);
 
-        final ListView listView = (ListView) findViewById(R.id.listView);
 
         firebaseFirestore=FirebaseFirestore.getInstance();
         mFirestorelist = findViewById(R.id.firestore_list);

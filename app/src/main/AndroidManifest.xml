@@ -24,15 +24,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".HomeCustomer"></activity>
-        <activity android:name=".TestListOffer" />
         <activity android:name=".AnOffer" />
-        <activity android:name=".HomeOffers" />
-        <activity android:name=".TripDemand" />
         <activity android:name=".TripOffer" />
         <activity android:name=".EditProfil" />
         <activity android:name=".Home" />
         <activity android:name=".ProfilActivity" />
-        <activity android:name=".RegisterCustomer" />
         <activity android:name=".CustomerLoginActivity" />
         <activity android:name=".DriverLoginActivity" />
         <!--
@@ -47,17 +43,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="" />
 
-        <activity
-            android:name=".DriverMapActivity3"
-            android:label="@string/title_activity_driver_map3" />
-        <activity
-            android:name=".DriverMapsActivity2"
-            android:label="@string/title_activity_driver_maps2" />
-        <activity
-            android:name=".DriverMapActivity"
-            android:label="@string/title_activity_driver_map" />
-        <activity android:name=".MapActivity" />
-        <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
