@@ -5,38 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditProfil"
-    android:background="@drawable/background"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="412dp"
+        android:layout_height="285dp"
         android:background="@drawable/fondprofil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122">
+        app:layout_constraintVertical_bias="0.0">
 
 
         <EditText
             android:id="@+id/profilFullName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your name"
+            android:hint="Your name"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.502"
-            />
+            app:layout_constraintVertical_bias="0.502" />
 
         <ImageView
             android:id="@+id/profil_image"
-            android:layout_width="89dp"
-            android:layout_height="73dp"
+            android:layout_width="110dp"
+            android:layout_height="106dp"
             android:saveEnabled="false"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -44,19 +41,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/profil"
-            />
+            app:srcCompat="@drawable/profil" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="395dp"
-        android:layout_height="170dp"
+        android:layout_width="398dp"
+        android:layout_height="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.532">
+        app:layout_constraintVertical_bias="0.64">
 
         <TextView
             android:id="@+id/nameTextView2"
@@ -100,7 +98,7 @@
                 android:layout_width="339dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Your phone"
+                android:hint="Your phone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -151,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Your email"
+                android:hint="Your email"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -172,7 +170,7 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896">
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:id="@+id/previous"
@@ -184,7 +182,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/save_profil"
@@ -196,7 +194,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

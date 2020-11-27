@@ -14,7 +14,7 @@ import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Home extends AppCompatActivity {
+public class HomeCustomer extends AppCompatActivity {
 
     Button profil;
     Button logout;
@@ -25,8 +25,8 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -38,22 +38,18 @@ public class Home extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.item1:
-                Intent intent = new Intent(Home.this, ProfilActivity.class);
+                Intent intent = new Intent(HomeCustomer.this, ProfilActivity.class);
                 startActivity(intent);
                 finish();
                 return true;
 
             case R.id.item2:
-                Intent intent2 = new Intent(Home.this, OfferListAdapter.class);
+                Intent intent2 = new Intent(HomeCustomer.this, OfferListAdapter.class);
                 startActivity(intent2);
                 finish();
                 return true;
 
-            case R.id.item3:
-                Intent intent3 = new Intent(Home.this, TripOffer.class);
-                startActivity(intent3);
-                finish();
-                return true;
+
             case R.id.item4:
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));

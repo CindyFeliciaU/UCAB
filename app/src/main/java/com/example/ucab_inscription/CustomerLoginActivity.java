@@ -66,7 +66,7 @@ public class CustomerLoginActivity extends AppCompatActivity {
                 if (user != null) {
 
 
-                    intent = new Intent(CustomerLoginActivity.this, Home.class);
+                    intent = new Intent(CustomerLoginActivity.this, HomeCustomer.class);
                     //}
                     startActivity(intent);
                     finish();

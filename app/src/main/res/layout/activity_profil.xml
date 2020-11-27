@@ -5,20 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfilActivity"
-    android:background="@drawable/background"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="413dp"
+        android:layout_height="298dp"
         android:background="@drawable/fondprofil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122">
+        app:layout_constraintVertical_bias="0.0">
 
 
         <TextView
@@ -32,6 +31,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/nameTextView3"
+            android:layout_width="121dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="91dp"
+            android:text="Your profil"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profil_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.512" />
 
         <ImageView
             android:id="@+id/profil_image"
@@ -49,13 +62,16 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="395dp"
-        android:layout_height="132dp"
+        android:layout_width="398dp"
+        android:layout_height="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499">
+        app:layout_constraintVertical_bias="0.64"
+
+        >
 
         <TextView
             android:id="@+id/nameTextView2"
@@ -161,8 +177,8 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        android:layout_width="390dp"
-        android:layout_height="172dp"
+        android:layout_width="386dp"
+        android:layout_height="113dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,21 +188,10 @@
         app:layout_constraintVertical_bias="0.954">
 
         <Button
-            android:id="@+id/change_profil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Change the profil"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
             android:id="@+id/change_profil_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Change the profil picture"
+            android:text="Change the profil "
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

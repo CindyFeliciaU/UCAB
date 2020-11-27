@@ -38,14 +38,6 @@ public class OfferListAdapter extends AppCompatActivity {
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
 
-    List<String> offersList;
-    List<String> offersListAll;
-
-    public OfferListAdapter(List<String> offersList){
-        this.offersList=offersList;
-        this.offersListAll=new ArrayList<>(offersList);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,8 +65,6 @@ public class OfferListAdapter extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(OfferHolder offerHolder, int i, @NonNull OfferModel offerModel) {
-
-
                 offerHolder.list_destination.setText(offerModel.getDestination());
                 offerHolder.list_hour.setText(offerModel.getTime());
                 offerHolder.list_departure.setText(offerModel.getDeparture());

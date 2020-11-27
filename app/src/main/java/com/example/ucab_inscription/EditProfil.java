@@ -70,25 +70,6 @@ public class EditProfil extends AppCompatActivity {
 
         storageReference = FirebaseStorage.getInstance().getReference();
         Log.d(TAG, "onCreate:"+fullName+" "+email+ " "+phone);
-      //  final DocumentReference documentReference = fStore.collection("users").document(userId);
-      //  final Map<String, Object> user = new HashMap<>();
-
-
-        //user.put("fName ",fullName);
-        //user.put("email ",email);
-        //user.put("phone", phone);
-       /* documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                Log.d( TAG, "onSuccess: user Profile created for "+ userId);
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.d(TAG, "onFailure: "+e.toString());
-            }
-        });
-*/
 
         previous.setOnClickListener(new View.OnClickListener(){
             @Override
