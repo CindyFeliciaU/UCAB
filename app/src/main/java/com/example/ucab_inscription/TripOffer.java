@@ -35,7 +35,7 @@ import java.util.Map;
 public class TripOffer extends AppCompatActivity {
 
     Button confirmButton;
-    Button book_button;
+
     Button cancelButton;
     EditText departure;
     EditText destination;
@@ -167,16 +167,6 @@ public class TripOffer extends AppCompatActivity {
                 }
 
              });
-        book_button=(Button)findViewById(R.id.book_button);
-        book_button.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent i = new Intent(getApplicationContext(),Book.class);
-                startActivity(i);
-            }
-        });
 
 
     }
