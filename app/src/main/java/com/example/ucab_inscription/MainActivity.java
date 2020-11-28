@@ -38,5 +38,10 @@ MainActivity extends AppCompatActivity {
             }
         });
         }
+    public void report(View view) {
+
+        startActivity(new Intent(getApplicationContext(), Report.class));
+    }
+
 
 }
