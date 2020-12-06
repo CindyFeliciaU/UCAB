@@ -23,13 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Offer_details"></activity>
-        <activity android:name=".Reservation" />
         <activity android:name=".Payment" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".HomeCustomer" />
         <activity android:name=".TripOffer" />
         <activity android:name=".EditProfil" />
-        <activity android:name=".Home" />
         <activity android:name=".ProfilActivity" />
         <activity android:name=".DriverLoginActivity" />
         <!--

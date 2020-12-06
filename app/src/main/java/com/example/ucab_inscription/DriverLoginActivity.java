@@ -57,7 +57,7 @@ public class DriverLoginActivity extends AppCompatActivity {
 
         mStore = FirebaseFirestore.getInstance();
         mRegistration = findViewById(R.id.registrationBtn);
-        mCreateBtn = findViewById(R.id.registerBtn);
+        mCreateBtn = findViewById(R.id.loginBtn);
         fireBaseAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
