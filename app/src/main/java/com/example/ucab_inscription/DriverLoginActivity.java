@@ -83,8 +83,9 @@ public class DriverLoginActivity extends AppCompatActivity {
                     mEmail.setError("Email is required");
                     return;
                 }
-                if(email.endsWith("@etu.uqac.ca")){
+                if(!email.endsWith("@etu.uqac.ca")){
                     mEmail.setError("Enter your UQAC email account");
+                    return;
                 }
                 if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Password is required");
