@@ -1,5 +1,7 @@
 package com.example.ucab_inscription;
 
+import android.widget.ImageView;
+
 public class OfferModel {
     public String destination;
     public String departure;
@@ -8,6 +10,7 @@ public class OfferModel {
     public String seats;
     public String price;
     public String time;
+
     OfferModel(String tripId, String destination, String departure, String date, String time, String seats, String price) {
         this.destination = destination;
         this.departure = departure;
@@ -64,6 +67,7 @@ public class OfferModel {
     }
 
     public String getTripId() {
+
         return tripId;
     }
 

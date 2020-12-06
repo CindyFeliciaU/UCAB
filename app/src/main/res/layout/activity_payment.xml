@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp">
+
+        <TextView
+            android:id="@+id/titleCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your payment"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="45dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/titleNcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bank Name" />
+
+    <EditText
+        android:id="@+id/editTextBankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Bank"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/titleAccountHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Holder Name" />
+
+    <EditText
+        android:id="@+id/editTextAccountHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Your Name"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/titleAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Number" />
+
+    <EditText
+        android:id="@+id/editTextAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bank"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/titleSwiftCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bank Name" />
+
+    <EditText
+        android:id="@+id/editTextSwiftCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bank"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="44dp"
+        android:text="By continuing, I confirm that i have read and agree to the Terms and conditions and Privacy policy"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/buttonPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay" />
+
+</LinearLayout>

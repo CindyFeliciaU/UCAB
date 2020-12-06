@@ -3,17 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="500dp"
     android:background="@drawable/list_offer_background"
     android:clickable="true">
 
 
     <TextView
+        android:id="@+id/driverName"
+        android:layout_width="238dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/list_offer_background"
+        android:text="Driver's name"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/driverInfo"
+        android:layout_width="337dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/list_offer_background"
+        android:text="No additional informations"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/list_seats"
         android:layout_width="30dp"
         android:layout_height="23dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="284dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="288dp"
         android:text="X"
         android:textAlignment="center"
         android:textSize="15sp"
@@ -24,8 +48,8 @@
         android:id="@+id/list_price"
         android:layout_width="32dp"
         android:layout_height="23dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="372dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="368dp"
         android:text="X"
         android:textAlignment="center"
         android:textSize="15sp"
@@ -97,7 +121,7 @@
         android:id="@+id/imageView3"
         android:layout_width="25dp"
         android:layout_height="23dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="156dp"
 
         android:layout_marginEnd="260dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,11 +132,36 @@
         android:id="@+id/imageView6"
         android:layout_width="9dp"
         android:layout_height="12dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="160dp"
 
         android:layout_marginEnd="360dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dollars" />
+
+    <ImageView
+        android:id="@+id/profilPic"
+        android:layout_width="71dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat"
+
+
+        />
+
+    <Button
+        android:id="@+id/Payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+
+        android:layout_marginTop="448dp"
+        android:text="Payment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

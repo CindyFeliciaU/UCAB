@@ -64,17 +64,10 @@ public class DriverLoginActivity extends AppCompatActivity {
                 //Check for the user status
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if (user != null) {
-                    /*if(registration){
-                        intent = new Intent(DriverLoginActivity.this, Register.class);
-                    }
-                    else {
-                    */
 
-                         intent = new Intent(DriverLoginActivity.this, Home.class);
-                    //}
+                    intent = new Intent(DriverLoginActivity.this, OfferListAdapter.class);
                     startActivity(intent);
-                    finish();
-                    return;
+
                 }
             }
         };
@@ -145,13 +138,7 @@ public class DriverLoginActivity extends AppCompatActivity {
             }
         });
 
-  /*      mCreateBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Register.class));
-            }
-        });
-*/
+
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -173,7 +160,6 @@ public class DriverLoginActivity extends AppCompatActivity {
                     return;
                 }
 
-                progressBar.setVisibility(View.VISIBLE);
 
                 mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(DriverLoginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
