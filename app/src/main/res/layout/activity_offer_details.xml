@@ -9,71 +9,85 @@
 
 
     <TextView
+        android:id="@+id/DeptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="52dp"
+        android:text="From"
+        app:layout_constraintEnd_toStartOf="@+id/list_departure"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/driverName"
         android:layout_width="238dp"
         android:layout_height="19dp"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/list_offer_background"
         android:text="Driver's name"
-        app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/driverInfo"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/driverInfo"
         android:layout_width="337dp"
         android:layout_height="88dp"
-        android:layout_marginTop="352dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/list_offer_background"
-        android:text="No additional informations"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/no_additional_informations"
 
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/list_seats"
         android:layout_width="30dp"
         android:layout_height="23dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="288dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="68dp"
         android:text="X"
         android:textAlignment="center"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/driverName"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/list_price"
         android:layout_width="32dp"
         android:layout_height="23dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="368dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="28dp"
         android:text="X"
         android:textAlignment="center"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/profilPic"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/list_date"
-        android:layout_width="155dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="48dp"
+        android:layout_width="139dp"
+        android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/list_offer_background"
         android:text="Date"
         android:textSize="19sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/list_departure"
+        app:layout_constraintEnd_toStartOf="@+id/HourText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/list_hour"
         android:layout_width="93dp"
         android:layout_height="33dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/list_offer_background"
         android:text="Hour"
         android:textSize="19sp"
@@ -82,9 +96,9 @@
 
     <TextView
         android:id="@+id/list_departure"
-        android:layout_width="292dp"
+        android:layout_width="228dp"
         android:layout_height="29dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="68dp"
         android:background="@drawable/list_offer_background"
         android:text="departure"
@@ -94,9 +108,9 @@
 
     <TextView
         android:id="@+id/list_destination"
-        android:layout_width="292dp"
+        android:layout_width="231dp"
         android:layout_height="29dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="68dp"
         android:background="@drawable/list_offer_background"
         android:text="destination"
@@ -108,35 +122,39 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="192dp"
+        android:layout_marginTop="8dp"
         android:rotation="-89"
         android:rotationX="4"
         android:rotationY="4"
+        app:layout_constraintBottom_toTopOf="@+id/list_destination"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_departure"
+        app:layout_constraintVertical_bias="0.363"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="25dp"
         android:layout_height="23dp"
-        android:layout_marginTop="156dp"
 
-        android:layout_marginEnd="260dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/driverName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/seats" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="9dp"
-        android:layout_height="12dp"
-        android:layout_marginTop="160dp"
+        android:layout_width="21dp"
+        android:layout_height="25dp"
 
-        android:layout_marginEnd="360dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/driverName"
+        app:layout_constraintEnd_toStartOf="@+id/list_seats"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/list_price"
         app:srcCompat="@drawable/dollars" />
 
     <ImageView
@@ -144,24 +162,61 @@
         android:layout_width="71dp"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/driverInfo"
+        app:layout_constraintEnd_toStartOf="@+id/driverName"
+
+
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:ignore="VectorDrawableCompat"
-
-
-        />
+        tools:ignore="VectorDrawableCompat" />
 
     <Button
-        android:id="@+id/Payment"
+        android:id="@+id/Book"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
 
-        android:layout_marginTop="448dp"
-        android:text="Payment"
+        android:text="@string/book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driverInfo" />
+
+    <TextView
+        android:id="@+id/DateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Date"
+        app:layout_constraintEnd_toStartOf="@+id/list_date"
+        app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HourText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:fadingEdge="vertical"
+        android:text="Hour :"
+        app:layout_constraintBottom_toTopOf="@+id/list_departure"
+        app:layout_constraintEnd_toStartOf="@+id/list_hour"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ToText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="To"
+        app:layout_constraintBottom_toTopOf="@+id/list_price"
+        app:layout_constraintEnd_toStartOf="@+id/list_destination"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
