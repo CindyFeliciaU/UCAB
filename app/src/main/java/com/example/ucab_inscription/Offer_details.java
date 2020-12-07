@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -106,6 +107,14 @@ public class Offer_details extends AppCompatActivity {
                         list_date.setText(document.getString("date"));
                         list_departure.setText(document.getString("departure "));
                         list_destination.setText(document.getString("destination "));
+                        findViewById(R.id.Book).setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View v) {
+                                Intent i = new Intent(getApplicationContext(),Book.class);
+                                startActivity(i);
+                            }
+                        });
 
                     } else {
                         Log.d(TAG, "No such offer");
