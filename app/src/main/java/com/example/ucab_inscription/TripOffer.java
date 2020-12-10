@@ -150,6 +150,7 @@ public class TripOffer extends AppCompatActivity {
 
                 Map<String, Object> trip_offer = new HashMap<>();
                 trip_offer.put("userId", userId);
+                trip_offer.put("driver",user.getEmail());
                 trip_offer.put("departure", depart);
                 trip_offer.put("destination", desti);
                 trip_offer.put("date", date);

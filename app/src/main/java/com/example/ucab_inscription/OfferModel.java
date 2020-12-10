@@ -10,8 +10,9 @@ public class OfferModel {
     public String seats;
     public String price;
     public String time;
+    public String driver;
 
-    OfferModel(String tripId, String destination, String departure, String date, String time, String seats, String price) {
+    OfferModel(String tripId, String destination, String departure, String date, String time, String seats, String price, String driver) {
         this.destination = destination;
         this.departure = departure;
         this.tripId = tripId;
@@ -19,12 +20,18 @@ public class OfferModel {
         this.time=time;
         this.seats=seats;
         this.price=price;
-
+        this.driver=driver;
     }
     OfferModel( ) {
 
     }
 
+    public String getDriver(){
+        return driver;
+    }
+    public void setDriver(String driver){
+        this.driver= driver;
+    }
     public String getDate() {
         return date;
     }

@@ -27,20 +27,22 @@ import com.google.firebase.firestore.Query;
 // FirebaseRecyclerAdapter is a class provided by
 // FirebaseUI. it provides functions to bind, adapt and show
 // database contents in a Recycler View
-public class OfferListAdapter extends AppCompatActivity {
+public class MyOfferListAdapter extends AppCompatActivity {
     private RecyclerView mFirestorelist;
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
     private AdapterView.OnItemClickListener listener;
-            Intent intent;
+    Intent intent;
+    private FirebaseAuth mAuth;
+    final String UserMail = mAuth.getInstance().getCurrentUser().getEmail();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_offers);
+        setContentView(R.layout.activity_my_offer_list);
 
         intent = getIntent();
         firebaseFirestore=FirebaseFirestore.getInstance();
-        mFirestorelist = findViewById(R.id.firestore_list);
+        mFirestorelist = findViewById(R.id.myfirestore_list);
 
         //Query
         Query query = FirebaseFirestore.getInstance().collection("offer_trip").orderBy("date");
@@ -48,7 +50,7 @@ public class OfferListAdapter extends AppCompatActivity {
         FirestoreRecyclerOptions<OfferModel> response = new FirestoreRecyclerOptions.Builder<OfferModel>()
                 .setQuery(query, OfferModel.class).setLifecycleOwner(this)
                 .build();
-         adapter = new FirestoreRecyclerAdapter<OfferModel, OfferHolder>(response) {
+        adapter = new FirestoreRecyclerAdapter<OfferModel, OfferHolder>(response) {
 
             @NonNull
             @Override
@@ -59,27 +61,33 @@ public class OfferListAdapter extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(final OfferHolder offerHolder, final int i, @NonNull final OfferModel offerModel) {
-                offerHolder.list_destination.setText(offerModel.getDestination());
-                offerHolder.list_hour.setText(offerModel.getTime());
-                offerHolder.list_departure.setText(offerModel.getDeparture());
-                offerHolder.list_seats.setText(offerModel.getSeats());
-                offerHolder.list_date.setText(offerModel.getDate());
-                offerHolder.list_price.setText(offerModel.getPrice());
+                if(offerModel.getDriver().equals(UserMail)){
+                    offerHolder.list_destination.setText(offerModel.getDestination());
+                    offerHolder.list_hour.setText(offerModel.getTime());
+                    offerHolder.list_departure.setText(offerModel.getDeparture());
+                    offerHolder.list_seats.setText(offerModel.getSeats());
+                    offerHolder.list_date.setText(offerModel.getDate());
+                    offerHolder.list_price.setText(offerModel.getPrice());
 
-                offerHolder.itemView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        //get the position
-                        final DocumentSnapshot snapshot = getSnapshots().getSnapshot(offerHolder.getAdapterPosition());
+                    offerHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            //get the position
+                            final DocumentSnapshot snapshot = getSnapshots().getSnapshot(offerHolder.getAdapterPosition());
 
-                        final String idOffer = snapshot.getId();
+                            final String idOffer = snapshot.getId();
 
-                        Intent intent = new Intent(getApplicationContext(), Offer_details.class);
-                        intent.putExtra("TripId",""+idOffer);
-                        startActivity(intent);
+                            Intent intent = new Intent(getApplicationContext(), Offer_details.class);
+                            intent.putExtra("TripId",""+idOffer);
+                            startActivity(intent);
 
-                    }
-                });
+                        }
+                    });
+                }
+                else {
+                    offerHolder.itemView.setVisibility(View.GONE);
+                }
+
 
             }
         };
@@ -110,7 +118,7 @@ public class OfferListAdapter extends AppCompatActivity {
             list_date= itemView.findViewById(R.id.list_date);
             list_price=itemView.findViewById(R.id.list_price);
 
-            }
+        }
     }
 
     @Override
@@ -168,4 +176,6 @@ public class OfferListAdapter extends AppCompatActivity {
     public class MyOfferHolder {
     }
 }
+
+
 
