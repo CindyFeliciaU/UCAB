@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UCAB</string>
+    <string name="no_additional_informations">No additional informations</string>
+    <string name="book">Book</string>
+</resources>

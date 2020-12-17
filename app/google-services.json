@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "501059145777",
+    "firebase_url": "https://ucab-17e71.firebaseio.com",
+    "project_id": "ucab-17e71",
+    "storage_bucket": "ucab-17e71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501059145777:android:7bb48db5ccbd85b9464510",
+        "android_client_info": {
+          "package_name": "com.example.ucab_inscription"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501059145777-o9igb1dmnrn1ecf5otrp64b34k1a0c7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvxtGhAud5-YfI2h8i25OPZmhSKR2J3s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501059145777-o9igb1dmnrn1ecf5otrp64b34k1a0c7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
