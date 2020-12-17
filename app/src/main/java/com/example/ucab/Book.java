@@ -56,11 +56,11 @@ public class Book extends AppCompatActivity {
         this.ItemId = getIntent().getStringExtra("ItemId");
         this.driverName = getIntent().getStringExtra("driverName");
 
-        cardForm.cardRequired(false)
-                .expirationRequired(false)
-                .cvvRequired(false)
-                .postalCodeRequired(false)
-                .mobileNumberRequired(false)
+        cardForm.cardRequired(true)
+                .expirationRequired(true)
+                .cvvRequired(true)
+                .postalCodeRequired(true)
+                .mobileNumberRequired(true)
                 .mobileNumberExplanation("SMS is required on this number")
                 .setup(Book.this);
         buy.setOnClickListener(new View.OnClickListener() {
